@@ -1,5 +1,10 @@
+const input = document.getElementById("input");
+
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
 function check() {
-    const value = input.value.trim(); // removes extra spaces
+    const value = input.value.trim(); // Remove spaces
 
     if (value === "") {
         alert("Please enter a word to check.");
